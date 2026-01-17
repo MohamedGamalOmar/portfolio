@@ -6,7 +6,11 @@ window.onscroll = () => {
 
 // * Make Typing Effect
 let typingElement = document.querySelector(".intro");
-let words = ["Mohamed Gamal", "FrontEnd Developer", "22 Years Old"];
+let words = [
+  "Mohamed Gamal",
+  "FrontEnd Developer",
+  "React.js & Vue.js Developer",
+];
 let index = 0;
 let charIndex = 0;
 
@@ -114,7 +118,9 @@ document.querySelector(".footer .copyright .year").innerHTML =
 
 async function addProjects() {
   let projects = document.querySelector(".projects .container .row");
-  let res = await fetch("https://gemy2050.github.io/portfolio/projects.json");
+  let res = await fetch(
+    "https://mohamedgamalomar.github.io/portfolio/projects.json",
+  );
   let data = await res.json();
 
   projects.innerHTML = "";
@@ -129,8 +135,8 @@ async function addProjects() {
             <div class="card-body">
               <h5 class="card-title text-primary">${el.title}</h5>
               <p class="card-text" title="${el.description}">${
-      el.description
-    }</p>
+                el.description
+              }</p>
               <div class="links d-flex justify-content-between align-items-center">
                 <a href="${el.code}" target="_blank" title="View Code">
                 ${
@@ -198,7 +204,7 @@ colors.forEach((color) => {
     e.target.classList.add("active");
     document.documentElement.style.setProperty(
       "--red-color",
-      e.target.dataset.color
+      e.target.dataset.color,
     );
     localStorage.setItem("color", e.target.dataset.color);
   });
@@ -207,7 +213,7 @@ colors.forEach((color) => {
 if (localStorage.getItem("color")) {
   document.documentElement.style.setProperty(
     "--red-color",
-    localStorage.getItem("color")
+    localStorage.getItem("color"),
   );
   colors.forEach((color) => {
     color.classList.remove("active");

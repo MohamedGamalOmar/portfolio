@@ -3,42 +3,42 @@
     "title": "KidsKiosk E-Commerce",
     "description": "a comprehensive e-commerce platform with a robust admin dashboard for real-time analytics, product management, and order tracking. The platform combines powerful administrative controls with an intuitive customer shopping experience.",
     "demo": "https://kidskiosk.vercel.app/",
-    "code": "https://github.com/Gemy2050/KidsKiosk",
+    "code": "https://github.com/MohamedGamalOmar/KidsKiosk",
     "image": "./imgs/kidskiosk.png"
   },
   {
     "title": "Linkedin Clone",
     "description": "Created With: React, Redux, Bootstrap, and Firebase",
     "demo": "https://linkedin-gemy.firebaseapp.com",
-    "code": "https://github.com/Gemy2050/Linkedin-Clone",
+    "code": "https://github.com/MohamedGamalOmar/Linkedin-Clone",
     "image": "./imgs/linkedin-clone.png"
   },
   {
     "title": "Students Assistant",
     "description": "Application designed to assist students of Computer Science with programming concepts, study resources, and another activities such as posts, chats ..etc",
     "demo": "https://chatbot-gemy.firebaseapp.com/",
-    "code": "https://github.com/Gemy2050/Chatbot_Project",
+    "code": "https://github.com/MohamedGamalOmar/Chatbot_Project",
     "image": "./imgs/student_assistant.png"
   },
   {
     "title": "Programming Quiz App",
     "description": "This App Show Some Questions And You Must Select Answer Before Time out",
-    "demo": "https://gemy2050.github.io/Prog_Quiz_App",
-    "code": "https://github.com/Gemy2050/Prog_Quiz_App",
+    "demo": "https://MohamedGamalOmar.github.io/Prog_Quiz_App",
+    "code": "https://github.com/MohamedGamalOmar/Prog_Quiz_App",
     "image": "./imgs/prog-quiz-app.png"
   },
   {
     "title": "Social App",
     "description": "You can browse posts, register to create posts and comment on other posts, and view profiles",
-    "demo": "https://gemy2050.github.io/social_app",
-    "code": "https://github.com/Gemy2050/social_app",
+    "demo": "https://MohamedGamalOmar.github.io/social_app",
+    "code": "https://github.com/MohamedGamalOmar/social_app",
     "image": "./imgs/social_app.png"
   },
   {
     "title": "Quran Player and Prays Time",
     "description": "Quran Player, Prays Time And The Remaining Time For Prays Depend on Your Location",
-    "demo": "https://gemy2050.github.io/Quran_MP3/",
-    "code": "https://github.com/Gemy2050/Quran_MP3",
+    "demo": "https://MohamedGamalOmar.github.io/Quran_MP3/",
+    "code": "https://github.com/MohamedGamalOmar/Quran_MP3",
     "image": "./imgs/quran_mp3.png"
   },
   {
@@ -51,22 +51,22 @@
   {
     "title": "Science Conference Template",
     "description": "Awesome Template Design",
-    "demo": "https://gemy2050.github.io/Bs_Template2",
-    "code": "https://github.com/gemy2050/Bs_Template2",
+    "demo": "https://MohamedGamalOmar.github.io/Bs_Template2",
+    "code": "https://github.com/MohamedGamalOmar/Bs_Template2",
     "image": "./imgs/conference.png"
   },
   {
     "title": "Creative Studio Template",
     "description": "Awesome Template Design",
-    "demo": "https://gemy2050.github.io/Creative_Studio",
-    "code": "https://github.com/Gemy2050/Creative_Studio",
+    "demo": "https://MohamedGamalOmar.github.io/Creative_Studio",
+    "code": "https://github.com/MohamedGamalOmar/Creative_Studio",
     "image": "./imgs/creative_studio.png"
   },
   {
     "title": "Dashboard",
     "description": "Awesome Admin Dashboard Design",
-    "demo": "https://github.com/Gemy2050/Dashboard",
-    "code": "https://gemy2050.github.io/Dashboard",
+    "demo": "https://github.com/MohamedGamalOmar/Dashboard",
+    "code": "https://MohamedGamalOmar.github.io/Dashboard",
     "image": "./imgs/dashboard.png"
   }
 ]
