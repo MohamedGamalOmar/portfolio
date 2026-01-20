@@ -118,8 +118,10 @@ document.querySelector(".footer .copyright .year").innerHTML =
 
 async function addProjects() {
   let projects = document.querySelector(".projects .container .row");
-  //* https://mohamedgamalomar.github.io/portfolio/projects.json
-  let res = await fetch("../projects.json");
+
+  let res = await fetch(
+    "https://mohamedgamalomar.github.io/portfolio/projects.json",
+  );
   let data = await res.json();
 
   const maxProjects = 8;
