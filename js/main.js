@@ -8,7 +8,7 @@ window.onscroll = () => {
 let typingElement = document.querySelector(".intro");
 let words = [
   "Mohamed Gamal",
-  "FrontEnd Developer",
+  "Frontend Developer",
   "React.js & Vue.js Developer",
 ];
 let index = 0;
@@ -118,26 +118,30 @@ document.querySelector(".footer .copyright .year").innerHTML =
 
 async function addProjects() {
   let projects = document.querySelector(".projects .container .row");
-  let res = await fetch(
-    "https://mohamedgamalomar.github.io/portfolio/projects.json",
-  );
+  //* https://mohamedgamalomar.github.io/portfolio/projects.json
+  let res = await fetch("../projects.json");
   let data = await res.json();
 
+  const maxProjects = 8;
   projects.innerHTML = "";
 
-  data.forEach((el) => {
+  data.forEach((el, idx) => {
     projects.innerHTML += `
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 project-wrapper ${idx < maxProjects ? "" : "d-none"}">
           <div class="project card" data-aos="flip-left">
             <img loading="lazy" src="${
               el.image
             }" class="card-img-top" alt="image" onclick="openPopup(event)">
             <div class="card-body">
               <h5 class="card-title text-primary">${el.title}</h5>
-              <p class="card-text" title="${el.description}">${
-                el.description
-              }</p>
+              <div class="description-wrapper">
+                <p class="card-text" >${el.description}</p>
+              
+                <span class="tooltip d-none d-md-block">${el.description}</span>
+              </div>
+
               <div class="links d-flex justify-content-between align-items-center">
+              
                 <a href="${el.code}" target="_blank" title="View Code">
                 ${
                   el.code
@@ -145,15 +149,38 @@ async function addProjects() {
                     : ""
                 }
                 </a>
-                <a href="${
-                  el.demo
-                }" target="_blank" title="Live Demo"><img loading="lazy"
-                    src="imgs/eye.png" class="img-fluid" alt="image"></a>
+
+                ${el.demo ? '<a href="' + el.demo + '" target="_blank" title="Live Demo"><img loading="lazy" src="imgs/eye.png" class="img-fluid" alt="image"></a>' : "<span class='no-demo'>To Be Released</span>"}
               </div>
             </div>
           </div>
         </div>
     `;
+  });
+
+  //* conditionally display the tooltip
+  const projectsSection = document.querySelector("#projects");
+
+  projectsSection.addEventListener("mouseover", (e) => {
+    if (!e.target.classList.contains("card-text")) {
+      return;
+    }
+
+    if (e.target.scrollHeight <= e.target.clientHeight) {
+      e.target.parentElement.querySelector(".tooltip").style.opacity = 0;
+    }
+  });
+
+  //* handle show more button
+  const showMore = document.querySelector(".projects .show-more");
+
+  showMore.addEventListener("click", () => {
+    const projects = document.querySelectorAll(".project-wrapper.d-none");
+    projects.forEach((project) => {
+      project.classList.remove("d-none");
+    });
+
+    showMore.style.display = "none";
   });
 }
 

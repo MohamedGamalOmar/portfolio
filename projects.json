@@ -1,5 +1,26 @@
 [
     {
+      "title": "Cairo Quran Radio",
+      "description": "The Official Website of the Quran Radio in Cairo, that is offering the ability to listen to Quran Radio, also allowing users to read the Quran as text and much more. Built Live Radio with auto-updating program schedule based on Cairo Time Zone. Created audio programs, episodes, and Quran recordings listing and details pages. Built a global sticky audio player used across the entire platform. Built a full admin system for CRUD operations: audio files, recordings, programs, and live radio paragraphs.",
+      "demo": "https://misrquran.gov.eg",
+      "code": null,
+      "image": "./imgs/QuranRadio.png"
+    },
+    {
+      "title": "CPA - Customer Protection Agency",
+      "description": "The Official Website of National Customer Protection Agency that enable citizens to electronically submit and track complaints regarding unfair trade practices and product safety concerns. Built the entire project from scratch including full authentication, authorization, and profile management. Built multi-step complain submission form with validation, listing, and detailed pages with date range and complain number filtering. Allowed users to upload files and receive documents or comments request notifications from CPA staff. Built informative agency pages, media center, newsletter and much more, ensured a clean and responsive UI.",
+      "demo": null,
+      "code": null,
+      "image": "./imgs/CPA.png"
+    },
+    {
+      "title": "MCIT - Ministry of Communication & Information Technology",
+      "description": "The Official Website of the Ministry of Communication and Information Technology, that will be available for both public users and internal Employees. Built listing and details pages for Tenders, Vacancies, Media Center, and what’s New. Created a global Print Specific Section utility that Prints only required parts of details pages and Excludes irrelevant content.",
+      "demo": null,
+      "code": null,
+      "image": "./imgs/MCIT.png"
+    },
+    {
     "title": "KidsKiosk E-Commerce",
     "description": "a comprehensive e-commerce platform with a robust admin dashboard for real-time analytics, product management, and order tracking. The platform combines powerful administrative controls with an intuitive customer shopping experience.",
     "demo": "https://kidskiosk.vercel.app/",
@@ -8,26 +29,26 @@
   },
   {
     "title": "Linkedin Clone",
-    "description": "Created With: React, Redux, Bootstrap, and Firebase",
+    "description": "Social Application enable users to sign in using google account and create posts. users can like posts, add comments, share the posts and recieve notifications in addtion to save posts and show profile ",
     "demo": "https://linkedin-gemy.firebaseapp.com",
     "code": "https://github.com/MohamedGamalOmar/Linkedin-Clone",
     "image": "./imgs/linkedin-clone.png"
   },
+    {
+    "title": "Health Care System",
+    "description": "platform that streamlines patient registration, appointment booking, and management for healthcare providers. Implemented administrative features for scheduling, confirming, and canceling appointments",
+    "demo": null,
+    "code": "https://github.com/MohamedGamalOmar/healthcare",
+    "image": "./imgs/healthcare.png"
+  },
   {
     "title": "Students Assistant",
-    "description": "Application designed to assist students of Computer Science with programming concepts, study resources, and another activities such as posts, chats ..etc",
+    "description": "Application designed to assist students of Computer Science with programming concepts, study resources, and another activities such as posts, chats ...etc",
     "demo": "https://chatbot-gemy.firebaseapp.com/",
-    "code": "https://github.com/MohamedGamalOmar/Chatbot_Project",
+    "code": null,
     "image": "./imgs/student_assistant.png"
   },
-  {
-    "title": "Programming Quiz App",
-    "description": "This App Show Some Questions And You Must Select Answer Before Time out",
-    "demo": "https://MohamedGamalOmar.github.io/Prog_Quiz_App",
-    "code": "https://github.com/MohamedGamalOmar/Prog_Quiz_App",
-    "image": "./imgs/prog-quiz-app.png"
-  },
-  {
+    {
     "title": "Social App",
     "description": "You can browse posts, register to create posts and comment on other posts, and view profiles",
     "demo": "https://MohamedGamalOmar.github.io/social_app",
@@ -35,18 +56,18 @@
     "image": "./imgs/social_app.png"
   },
   {
-    "title": "Quran Player and Prays Time",
+    "title": "Quiz App",
+    "description": "This App Show Some Questions And You Must Select Answer Before Time out",
+    "demo": "https://MohamedGamalOmar.github.io/Prog_Quiz_App",
+    "code": "https://github.com/MohamedGamalOmar/Prog_Quiz_App",
+    "image": "./imgs/prog-quiz-app.png"
+  },
+  {
+    "title": "Quran Player and Prays Timings",
     "description": "Quran Player, Prays Time And The Remaining Time For Prays Depend on Your Location",
     "demo": "https://MohamedGamalOmar.github.io/Quran_MP3/",
     "code": "https://github.com/MohamedGamalOmar/Quran_MP3",
     "image": "./imgs/quran_mp3.png"
-  },
-  {
-    "title": "Health Care Template",
-    "description": "Awesome Template Design",
-    "demo": "https://doctor-clinic.surge.sh/",
-    "code": null,
-    "image": "./imgs/doctor-clinic.png"
   },
   {
     "title": "Science Conference Template",
@@ -56,17 +77,10 @@
     "image": "./imgs/conference.png"
   },
   {
-    "title": "Creative Studio Template",
+    "title": "Health Care Template",
     "description": "Awesome Template Design",
-    "demo": "https://MohamedGamalOmar.github.io/Creative_Studio",
-    "code": "https://github.com/MohamedGamalOmar/Creative_Studio",
-    "image": "./imgs/creative_studio.png"
-  },
-  {
-    "title": "Dashboard",
-    "description": "Awesome Admin Dashboard Design",
-    "demo": "https://github.com/MohamedGamalOmar/Dashboard",
-    "code": "https://MohamedGamalOmar.github.io/Dashboard",
-    "image": "./imgs/dashboard.png"
+    "demo": "https://doctor-clinic.surge.sh/",
+    "code": null,
+    "image": "./imgs/doctor-clinic.png"
   }
 ]

@@ -1,5 +1,5 @@
 :root {
-  --red-color: #ff3150;
+  --red-color: #2196f3;
   --dark-color: #19283f;
   --yellow-color: #ffc400;
 }
@@ -26,6 +26,7 @@
 
 body {
   font-family: "Tahoma", sans-serif;
+  font-family: System-ui;
   background-color: #191919;
   color: white;
   overflow-x: hidden;
@@ -441,22 +442,33 @@ body {
 }
 
 /* Projects */
-.projects .container .row {
+/* .projects .container .row {
   overflow: hidden;
-}
+} */
 
 /* .projects .row>div {
   display: none;
 } */
 
 .projects .project {
-  background-color: var(--dark-color);
+  background-color: transparent;
+
+  /* Glass Effect */
+  background: hsla(0, 0%, 55%, 0.1);
+  background-color: #19283f57;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid hsla(0, 0%, 100%, 0.3);
+
   text-align: center;
 }
 
 .projects .project > img {
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
+  aspect-ratio: 2 / 1;
   border-radius: 6px;
   cursor: pointer;
   border-bottom: 1px solid #eee;
@@ -465,6 +477,10 @@ body {
 .projects .project .card-title {
   color: var(--red-color) !important;
   min-height: 50px;
+
+  @media (max-width: 991px) {
+    font-size: 18px;
+  }
 }
 
 .projects .links a img {
@@ -480,11 +496,75 @@ body {
 
 .projects .card-text {
   min-height: 95px;
-  line-clamp: 4;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  display: -webkit-box;
+
+  @media (min-width: 768px) {
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+}
+
+/** Tooltip */
+
+/* From Uiverse.io by Cksunandh */
+.projects .project .description-wrapper {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tooltip {
+  background-color: #000000ee;
+  border: #7c7c7c 1px solid;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  min-height: 100%;
+  max-height: max-content;
+  transform: translateX(-50%) translateY(-100%);
+  padding: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 18px;
+}
+
+.tooltip::before {
+  border: 8px solid;
+  border-color: var(--red-color) transparent transparent transparent;
+  position: absolute;
+  content: "";
+  /* height: 0.6em;
+  width: 0.6em; */
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.project:has(.card-text:hover) .tooltip {
+  top: -100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+}
+
+/* ********* */
+
+.projects .project .no-demo {
+  padding: 7px;
+  font-size: 12px;
+  background-color: #ff990044;
+  color: #ff9800;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .show-more {
