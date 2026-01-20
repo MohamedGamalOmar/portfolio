@@ -48,6 +48,13 @@
     "code": null,
     "image": "./imgs/student_assistant.png"
   },
+  {
+    "title": "Quran Player and Prays Timings",
+    "description": "Quran Player, Prays Time And The Remaining Time For Prays Depend on Your Location",
+    "demo": "https://MohamedGamalOmar.github.io/Quran_MP3/",
+    "code": "https://github.com/MohamedGamalOmar/Quran_MP3",
+    "image": "./imgs/quran_mp3.png"
+  },
     {
     "title": "Social App",
     "description": "You can browse posts, register to create posts and comment on other posts, and view profiles",
@@ -61,26 +68,5 @@
     "demo": "https://MohamedGamalOmar.github.io/Prog_Quiz_App",
     "code": "https://github.com/MohamedGamalOmar/Prog_Quiz_App",
     "image": "./imgs/prog-quiz-app.png"
-  },
-  {
-    "title": "Quran Player and Prays Timings",
-    "description": "Quran Player, Prays Time And The Remaining Time For Prays Depend on Your Location",
-    "demo": "https://MohamedGamalOmar.github.io/Quran_MP3/",
-    "code": "https://github.com/MohamedGamalOmar/Quran_MP3",
-    "image": "./imgs/quran_mp3.png"
-  },
-  {
-    "title": "Science Conference Template",
-    "description": "Awesome Template Design",
-    "demo": "https://MohamedGamalOmar.github.io/Bs_Template2",
-    "code": "https://github.com/MohamedGamalOmar/Bs_Template2",
-    "image": "./imgs/conference.png"
-  },
-  {
-    "title": "Health Care Template",
-    "description": "Awesome Template Design",
-    "demo": "https://doctor-clinic.surge.sh/",
-    "code": null,
-    "image": "./imgs/doctor-clinic.png"
   }
 ]

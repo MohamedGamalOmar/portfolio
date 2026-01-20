@@ -515,7 +515,6 @@ body {
 /* From Uiverse.io by Cksunandh */
 .projects .project .description-wrapper {
   position: relative;
-  cursor: pointer;
   transition: all 0.2s;
 }
 
