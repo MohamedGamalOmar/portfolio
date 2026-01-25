@@ -32,6 +32,14 @@ body {
   overflow-x: hidden;
 }
 
+body:has(.load) > main {
+  display: none;
+}
+
+body:has(.load.d-none) > main {
+  display: block;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -241,7 +249,7 @@ body {
 }
 
 /* .landing .image::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 60%;
@@ -252,7 +260,7 @@ body {
   border-radius: 25% 75% 83% 17% / 37% 72% 28% 63%;
   rotate: -85deg;
   z-index: -1;
-  transition: .3s;
+  transition: 0.3s;
 } */
 
 .landing img {
@@ -283,6 +291,16 @@ body {
   .landing .image {
     overflow: hidden;
   }
+}
+
+.landing .text .btn {
+  min-width: 120px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.landing .text .btn:hover {
+  letter-spacing: 2px;
 }
 
 /* About */
@@ -790,7 +808,7 @@ body {
 }
 
 /* End Contact */
-body > svg {
+body .contact + svg {
   background-color: #1b1f24;
 }
 
@@ -841,16 +859,19 @@ body > svg {
 /* Loading */
 .load {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100dvh;
+  max-width: 100%;
+  background-color: #191919;
+  z-index: 9999;
   display: flex;
   justify-content: center;
+  align-items: center;
   /* margin: 50px auto; */
 }
 
 .load div {
-  background-color: orchid;
+  background-color: var(--red-color);
   width: 20px;
   height: 20px;
   border-radius: 50%;

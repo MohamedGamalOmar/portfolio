@@ -35,626 +35,646 @@
   </head>
 
   <body>
-    <!-- <div class="load">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="third"></div>
-  </div> -->
-    <div class="scroller"></div>
-    <!-- Start Setting box -->
-    <div class="setting-box">
-      <div class="toggle-setting d-flex"><i class="fa fa-gear"></i></div>
-      <div class="setting-container">
-        <div class="option-box rounded-2">
-          <h4 class="fs-6 mb-2">Colors</h4>
-          <ul
-            class="colors-list d-flex justify-content-between align-items-center list-unstyled"
+    <div class="load">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="third"></div>
+    </div>
+
+    <main>
+      <div class="scroller"></div>
+      <!-- Start Setting box -->
+      <div class="setting-box">
+        <div class="toggle-setting d-flex"><i class="fa fa-gear"></i></div>
+        <div class="setting-container">
+          <div class="option-box rounded-2">
+            <h4 class="fs-6 mb-2">Colors</h4>
+            <ul
+              class="colors-list d-flex justify-content-between align-items-center list-unstyled"
+            >
+              <li data-color="#ff3150"></li>
+              <li data-color="#2196f3" class="active"></li>
+              <li data-color="#ff9800"></li>
+              <li data-color="green"></li>
+              <li data-color="#e91e63"></li>
+            </ul>
+          </div>
+          <div class="option-box rounded-2">
+            <h4 class="fs-6">Show Scrollbar</h4>
+            <div class="scroll-bar">
+              <span class="yes selected btn py-1 px-2 me-1 red-bg">Yes</span>
+              <span class="no btn py-1 px-2 red-bg">No</span>
+            </div>
+          </div>
+          <button aria-label="Label For Button" class="reset btn red-bg w-100">
+            Reset
+          </button>
+        </div>
+      </div>
+      <!-- End Setting box -->
+      <!-- Start Header  -->
+      <div class="navbar navbar-expand-md navbar-dark mb-sm-4 mb-md-0">
+        <div class="container">
+          <a class="navbar-brand fs-4 d-flex align-items-center gap-2" href="">
+            <i class="fas fa-code fa-fw red-color"></i>
+            <span class="">Dev <span class=""></span></span>
+          </a>
+          <button
+            aria-label=" Label For Button"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <li data-color="#ff3150"></li>
-            <li data-color="#2196f3" class="active"></li>
-            <li data-color="#ff9800"></li>
-            <li data-color="green"></li>
-            <li data-color="#e91e63"></li>
-          </ul>
-        </div>
-        <div class="option-box rounded-2">
-          <h4 class="fs-6">Show Scrollbar</h4>
-          <div class="scroll-bar">
-            <span class="yes selected btn py-1 px-2 me-1 red-bg">Yes</span>
-            <span class="no btn py-1 px-2 red-bg">No</span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center text-md-start"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto me-auto gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+            <a class="btn red-bg mt-4 mt-md-0" href="#contact">Contact Us</a>
           </div>
         </div>
-        <button aria-label="Label For Button" class="reset btn red-bg w-100">
-          Reset
-        </button>
       </div>
-    </div>
-    <!-- End Setting box -->
-    <!-- Start Header  -->
-    <div class="navbar navbar-expand-md navbar-dark mb-sm-4 mb-md-0">
-      <div class="container">
-        <a class="navbar-brand fs-4 d-flex align-items-center gap-2" href="">
-          <i class="fas fa-code fa-fw red-color"></i>
-          <span class="">Dev <span class=""></span></span>
-        </a>
-        <button
-          aria-label=" Label For Button"
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse text-center text-md-start"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav ms-auto me-auto gap-4">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-          </ul>
-          <a class="btn red-bg mt-4 mt-md-0" href="#contact">Contact Us</a>
-        </div>
-      </div>
-    </div>
-    <!-- End Header  -->
-    <!-- Start Landing -->
-    <div class="landing d-flex align-items-center mb-5">
-      <div class="container">
-        <div class="row g-3 d-flex align-items-center">
-          <div class="col-md-6">
-            <div class="text text-md-start text-center" data-aos="fade-right">
-              <h1 class="mb-3">
-                <p class="fs-5">
-                  Hello There, <span class="red-color">I am</span>
-                </p>
-                <span class="intro fs-1 red-color my-2"></span>
-              </h1>
-              <!-- <p class="fs-4">I'm a <span class="red-color fw-bold">Front-End</span> Developer.</p> -->
-              <a
-                href="./Mohamed-Gamal-CV.pdf"
-                aria-label=" Label For Button"
-                class="btn red-bg rounded-2"
-                download
-                >Download CV</a
+      <!-- End Header  -->
+      <!-- Start Landing -->
+      <div class="landing d-flex align-items-center mb-5">
+        <div class="container">
+          <div class="row g-3 d-flex align-items-center">
+            <div class="col-md-6">
+              <div class="text text-md-start text-center" data-aos="fade-right">
+                <h1 class="mb-3">
+                  <p class="fs-5">
+                    Hello There, <span class="red-color">I am</span>
+                  </p>
+                  <span class="intro fs-1 red-color my-2"></span>
+                </h1>
+                <!-- <p class="fs-4">I'm a <span class="red-color fw-bold">Front-End</span> Developer.</p> -->
+                <a
+                  href="https://drive.google.com/file/d/1XRRf_Zsuqbv5pyPrUC-1VLazgyGN5a09/view?usp=sharing"
+                  aria-label="View my cv"
+                  class="btn red-bg rounded-2"
+                  target="_blank"
+                  >View CV</a
+                >
+              </div>
+              <div class="social"></div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="image py-4 py-md-0 text-center position-relative"
+                data-aos="fade-left"
               >
-            </div>
-            <div class="social"></div>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="image py-4 py-md-0 text-center position-relative"
-              data-aos="fade-left"
-            >
-              <img
-                loading="lazy"
-                src="imgs/my-image-tp.png"
-                class="img-fluid"
-                alt="Landing image"
-              />
+                <img
+                  loading="eager"
+                  src="imgs/my-image-tp.png"
+                  class="img-fluid"
+                  alt="Landing image"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Landing -->
-    <!-- Start About -->
-    <div class="about py-5" id="about">
-      <div class="container">
-        <div class="row align-items-center g-3">
-          <div class="col-md-6">
-            <div class="text-center">
-              <img
-                loading="lazy"
-                src="imgs/about.svg"
-                class="img-fluid"
+      <!-- End Landing -->
+      <!-- Start About -->
+      <div class="about py-5" id="about">
+        <div class="container">
+          <div class="row align-items-center g-3">
+            <div class="col-md-6">
+              <div class="text-center">
+                <img
+                  loading="lazy"
+                  src="imgs/about.svg"
+                  class="img-fluid"
+                  data-aos="zoom-in"
+                  alt="About Image"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="text px-1 text-center text-md-start mt-4"
                 data-aos="zoom-in"
-                alt="About Image"
-              />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="text px-1 text-center text-md-start mt-4"
-              data-aos="zoom-in"
-            >
-              <h1 class="main-title">
-                About <span class="red-color">Me</span>
-              </h1>
-              <!-- <h5><span class="red-color">FrontEnd</span> Developer</h5> -->
-              <p class="text-white-50 lh-lg">
-                Frontend Engineer with expertise in building responsive and
-                scalable web applications using Vue.js and React.js. Skilled in
-                turning UI designs into clean, functional, and accessible
-                interfaces, with strong expertise in component-based
-                architecture, state management, and REST API integration.
-                Experienced in optimizing UI performance, improving code
-                quality, and collaborating effectively with backend teams.
-                Dedicated to writing maintainable code and staying updated with
-                modern frontend best practices.
-              </p>
+              >
+                <h1 class="main-title">
+                  About <span class="red-color">Me</span>
+                </h1>
+                <!-- <h5><span class="red-color">FrontEnd</span> Developer</h5> -->
+                <p class="text-white-50 lh-lg">
+                  Frontend Engineer with expertise in building responsive and
+                  scalable web applications using Vue.js and React.js. Skilled
+                  in turning UI designs into clean, functional, and accessible
+                  interfaces, with strong expertise in component-based
+                  architecture, state management, and REST API integration.
+                  Experienced in optimizing UI performance, improving code
+                  quality, and collaborating effectively with backend teams.
+                  Dedicated to writing maintainable code and staying updated
+                  with modern frontend best practices.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End About -->
-    <!-- Start Time Line -->
-    <div class="timeline py-5">
-      <h1 class="main-title text-center my-4">
-        My <span class="red-color">Journey</span>
-      </h1>
-      <div class="container">
-        <div class="timeline-content position-relative overflow-hidden">
-          <!-- <div
+      <!-- End About -->
+      <!-- Start Time Line -->
+      <div class="timeline py-5">
+        <h1 class="main-title text-center my-4">
+          My <span class="red-color">Journey</span>
+        </h1>
+        <div class="container">
+          <div class="timeline-content position-relative overflow-hidden">
+            <!-- <div
             class="year red-color rounded-2 py-1 px-2 text-white text-center"
             data-aos="fade-up"
           >
             2025
           </div> -->
-          <div class="left p-3 position-relative rounded-3" data-aos="fade-up">
-            <div class="content">
-              <h3 class="red-color">Frontend Engineer</h3>
-              <h5>TurnDigital (Software House) - Cairo</h5>
+            <div
+              class="left p-3 position-relative rounded-3"
+              data-aos="fade-up"
+            >
+              <div class="content">
+                <h3 class="red-color">Frontend Engineer</h3>
+                <h5>TurnDigital (Software House) - Cairo</h5>
 
-              <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
-                <i class="fa-regular fa-calendar"></i>
-                <span>April 2025 - Present</span>
+                <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>April 2025 - Present</span>
+                </div>
+                <p>
+                  Responsible for building scalable, maintainable front-end
+                  architectures for enterprise projects. Specialized in Vue.js,
+                  Vuex, Pinia, Tailwind CSS, Umbraco Admin, and Agile
+                  methodologies. Collaborated with cross-functional teams to
+                  deliver high quality software solutions.
+                </p>
               </div>
-              <p>
-                Responsible for building scalable, maintainable front-end
-                architectures for enterprise projects. Specialized in Vue.js,
-                Vuex, Pinia, Tailwind CSS, Umbraco Admin, and Agile
-                methodologies. Collaborated with cross-functional teams to
-                deliver high quality software solutions.
-              </p>
             </div>
-          </div>
 
-          <div class="clear-float"></div>
+            <div class="clear-float"></div>
 
-          <div class="right p-3 position-relative rounded-3" data-aos="fade-up">
-            <div class="content">
-              <h3 class="red-color">Frontend Engineer</h3>
-              <h5>Freelance</h5>
+            <div
+              class="right p-3 position-relative rounded-3"
+              data-aos="fade-up"
+            >
+              <div class="content">
+                <h3 class="red-color">Frontend Engineer</h3>
+                <h5>Freelance</h5>
 
-              <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
-                <i class="fa-regular fa-calendar"></i>
-                <span>Sep 2024 - Feb 2025</span>
+                <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Sep 2024 - Feb 2025</span>
+                </div>
+                <p>
+                  Specialized in React.js, Redux, TypeScript, and Tailwind CSS
+                  with component-based architecture, state management, and REST
+                  API integration to develop scalable and responsive user
+                  interfaces for modern web applications.
+                </p>
               </div>
-              <p>
-                Specialized in React.js, Redux, TypeScript, and Tailwind CSS
-                with component-based architecture, state management, and REST
-                API integration to develop scalable and responsive user
-                interfaces for modern web applications.
-              </p>
             </div>
-          </div>
 
-          <div class="clear-float"></div>
+            <div class="clear-float"></div>
 
-          <div class="left p-3 position-relative rounded-3" data-aos="fade-up">
-            <div class="content">
-              <h3 class="red-color">Frontend Intern</h3>
-              <h5>ARIB - Nasser City, Cairo</h5>
+            <div
+              class="left p-3 position-relative rounded-3"
+              data-aos="fade-up"
+            >
+              <div class="content">
+                <h3 class="red-color">Frontend Intern</h3>
+                <h5>ARIB - Nasser City, Cairo</h5>
 
-              <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
-                <i class="fa-regular fa-calendar"></i>
-                <span>Jul 2024 - Aug 2024</span>
+                <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Jul 2024 - Aug 2024</span>
+                </div>
+                <p>
+                  During the internship at ARIB, delivered a modern e-commerce
+                  platform using React.js, Redux, and Bootstrap. The role
+                  strengthened understanding of React architecture, state
+                  management principles, and UI performance while collaborating
+                  with experienced frontend teams..
+                </p>
               </div>
-              <p>
-                During the internship at ARIB, delivered a modern e-commerce
-                platform using React.js, Redux, and Bootstrap. The role
-                strengthened understanding of React architecture, state
-                management principles, and UI performance while collaborating
-                with experienced frontend teams..
-              </p>
             </div>
-          </div>
 
-          <div class="clear-float"></div>
+            <div class="clear-float"></div>
 
-          <div class="right p-3 position-relative rounded-3" data-aos="fade-up">
-            <div class="content">
-              <h3 class="red-color">Frontend Trainee</h3>
-              <h5>ITI - Shebin El Kom, Menofia</h5>
+            <div
+              class="right p-3 position-relative rounded-3"
+              data-aos="fade-up"
+            >
+              <div class="content">
+                <h3 class="red-color">Frontend Trainee</h3>
+                <h5>ITI - Shebin El Kom, Menofia</h5>
 
-              <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
-                <i class="fa-regular fa-calendar"></i>
-                <span>Jul 2023 - Sep 2023</span>
+                <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Jul 2023 - Sep 2023</span>
+                </div>
+                <p>
+                  Developed dynamic web applications using HTML, CSS,
+                  JavaScript, Bootstrap, React, and Redux. Built responsive,
+                  mobile-first interfaces with Bootstrap, ensuring seamless user
+                  experience across devices. Gained in-depth knowledge of
+                  React’s component-based architecture, state management, and
+                  lifecycle.
+                </p>
               </div>
-              <p>
-                Developed dynamic web applications using HTML, CSS, JavaScript,
-                Bootstrap, React, and Redux. Built responsive, mobile-first
-                interfaces with Bootstrap, ensuring seamless user experience
-                across devices. Gained in-depth knowledge of React’s
-                component-based architecture, state management, and lifecycle.
-              </p>
             </div>
-          </div>
 
-          <div class="clear-float"></div>
+            <div class="clear-float"></div>
 
-          <div class="left p-3 position-relative rounded-3" data-aos="fade-up">
-            <div class="content">
-              <h3 class="red-color">Bachelor of Computer Science</h3>
-              <h5>Benha University</h5>
+            <div
+              class="left p-3 position-relative rounded-3"
+              data-aos="fade-up"
+            >
+              <div class="content">
+                <h3 class="red-color">Bachelor of Computer Science</h3>
+                <h5>Benha University</h5>
 
-              <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
-                <i class="fa-regular fa-calendar"></i>
-                <span>Sep 2020 - June 2024</span>
+                <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>Sep 2020 - June 2024</span>
+                </div>
+                <p>
+                  Bachelor Degree in Computer Science and AI <br />
+                  Graduation Project: A+ | GPA: 3.18 / 4 <br />
+                  Grade: Very Good (B+)
+                </p>
               </div>
-              <p>
-                Bachelor Degree in Computer Science and AI <br />
-                Graduation Project: A+ | GPA: 3.18 / 4 <br />
-                Grade: Very Good (B+)
-              </p>
             </div>
+            <div class="clear-float"></div>
           </div>
-          <div class="clear-float"></div>
         </div>
       </div>
-    </div>
-    <!-- End Time Line -->
-    <!-- Start Skills -->
-    <div class="skills py-5" id="skills">
-      <div class="container">
-        <h1 class="main-title text-center my-4">
-          My <span class="red-color">Skills</span>
+      <!-- End Time Line -->
+      <!-- Start Skills -->
+      <div class="skills py-5" id="skills">
+        <div class="container">
+          <h1 class="main-title text-center my-4">
+            My <span class="red-color">Skills</span>
+          </h1>
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+              <img
+                loading="lazy"
+                src="imgs/skills.svg"
+                class="img-fluid"
+                data-aos="zoom-in-down"
+                alt="skills image"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="skills aos-init aos-animate" data-aos="zoom-in-up">
+                <div class="box mt-4">
+                  <h4 class="d-flex justify-content-between">
+                    <span>HTML</span> 85%
+                  </h4>
+                  <div class="progress position-relative">
+                    <span class="red-bg" data-width="85%"></span>
+                  </div>
+                </div>
+                <div class="box mt-4">
+                  <h4 class="d-flex justify-content-between">
+                    <span>CSS</span> 85%
+                  </h4>
+                  <div class="progress position-relative">
+                    <span data-width="85%"></span>
+                  </div>
+                </div>
+                <div class="box mt-4">
+                  <h4 class="d-flex justify-content-between">
+                    <span>JavaScript</span> 90%
+                  </h4>
+                  <div class="progress position-relative">
+                    <span data-width="90%"></span>
+                  </div>
+                </div>
+                <div class="box mt-4">
+                  <h4 class="d-flex justify-content-between">
+                    <span>TypeScript</span> 85%
+                  </h4>
+                  <div class="progress position-relative">
+                    <span data-width="85%"></span>
+                  </div>
+                </div>
+                <div class="box mt-4">
+                  <h4 class="d-flex justify-content-between">
+                    <span>React.js</span> 90%
+                  </h4>
+                  <div class="progress position-relative">
+                    <span data-width="90%"></span>
+                  </div>
+                </div>
+                <div class="box mt-4">
+                  <h4 class="d-flex justify-content-between">
+                    <span>Vue.js</span> 90%
+                  </h4>
+                  <div class="progress position-relative">
+                    <span data-width="90%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="techs mt-5 p-1 p-md-4 d-flex flex-wrap justify-content-center gap-3 gap-md-4"
+          >
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/html.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/css.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/js.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="./imgs/typescript.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/vuejs.webp"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/react.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/nextjs.webp"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/redux.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/tailwind.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/Bootstrap.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/sass.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/firebase.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/gulp.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/github.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/python.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
+                src="imgs/cplus.png"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Skills -->
+      <!-- Start Projects -->
+      <div class="projects py-5" id="projects">
+        <h1 class="main-title">
+          Top <span class="red-color"> Projects </span>
         </h1>
-        <div class="row align-items-center">
-          <div class="col-md-6 text-center">
-            <img
-              loading="lazy"
-              src="imgs/skills.svg"
-              class="img-fluid"
-              data-aos="zoom-in-down"
-              alt="skills image"
-            />
+        <div class="container">
+          <div class="row g-4 g-md-5"></div>
+          <!-- <div class="show-more btn red-bg">Show More</div> -->
+        </div>
+      </div>
+      <!-- Start Projects -->
+      <!-- Start Contact Us -->
+      <div class="contact py-5 overflow-hidden" id="contact">
+        <h1 class="main-title"><span class="red-color">Contact</span> Us</h1>
+        <div class="container mt-5 d-flex justify-content-center gap-4">
+          <div
+            class="links d-flex flex-column gap-5 justify-content-between"
+            data-aos="zoom-in-left"
+          >
+            <a
+              class="icon"
+              href="https://www.linkedin.com/in/mohamed-gamal-omar"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a class="icon" href="https://wa.me/201021595806" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a
+              class="icon"
+              href="https://github.com/mohamedgamalomar"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              class="icon"
+              href="https://www.facebook.com/profile.php?id=100013438807065"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
           </div>
-          <div class="col-md-6">
-            <div class="skills aos-init aos-animate" data-aos="zoom-in-up">
-              <div class="box mt-4">
-                <h4 class="d-flex justify-content-between">
-                  <span>HTML</span> 85%
-                </h4>
-                <div class="progress position-relative">
-                  <span class="red-bg" data-width="85%"></span>
-                </div>
-              </div>
-              <div class="box mt-4">
-                <h4 class="d-flex justify-content-between">
-                  <span>CSS</span> 85%
-                </h4>
-                <div class="progress position-relative">
-                  <span data-width="85%"></span>
-                </div>
-              </div>
-              <div class="box mt-4">
-                <h4 class="d-flex justify-content-between">
-                  <span>JavaScript</span> 90%
-                </h4>
-                <div class="progress position-relative">
-                  <span data-width="90%"></span>
-                </div>
-              </div>
-              <div class="box mt-4">
-                <h4 class="d-flex justify-content-between">
-                  <span>TypeScript</span> 85%
-                </h4>
-                <div class="progress position-relative">
-                  <span data-width="85%"></span>
-                </div>
-              </div>
-              <div class="box mt-4">
-                <h4 class="d-flex justify-content-between">
-                  <span>React.js</span> 90%
-                </h4>
-                <div class="progress position-relative">
-                  <span data-width="90%"></span>
-                </div>
-              </div>
-              <div class="box mt-4">
-                <h4 class="d-flex justify-content-between">
-                  <span>Vue.js</span> 90%
-                </h4>
-                <div class="progress position-relative">
-                  <span data-width="90%"></span>
-                </div>
-              </div>
+          <form action="" autocomplete="off" data-aos="zoom-in-right">
+            <div class="email-popup">
+              <h1 class="msg">
+                Message Sent <br />
+                Successfully
+              </h1>
+              <span>Ok</span>
             </div>
-          </div>
+            <div class="input-box">
+              <input
+                type="text"
+                class="from_name"
+                placeholder="Full Name"
+                spellcheck="false"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <input
+                type="email"
+                class="email"
+                placeholder="Email"
+                spellcheck="false"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <textarea
+                type="text"
+                class="message"
+                placeholder="Message"
+                spellcheck="false"
+                required
+              ></textarea>
+            </div>
+            <div type="text" class="submit" disabled>Submit</div>
+            <button
+              aria-label=" Label For Button"
+              style="display: none"
+              type="reset"
+              class="reset"
+            >
+              Reset
+            </button>
+          </form>
         </div>
-        <div
-          class="techs mt-5 p-1 p-md-4 d-flex flex-wrap justify-content-center gap-3 gap-md-4"
-        >
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/html.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/css.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/js.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="./imgs/typescript.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/vuejs.webp"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/react.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/nextjs.webp"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/redux.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/tailwind.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/Bootstrap.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/sass.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/firebase.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/gulp.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/github.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/python.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-          <div
-            class="icon d-flex align-items-center justify-content-center"
-            data-aos="fade-up"
-          >
-            <img
-              loading="lazy"
-              src="imgs/cplus.png"
-              class="img-fluid"
-              alt="icon"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Skills -->
-    <!-- Start Projects -->
-    <div class="projects py-5" id="projects">
-      <h1 class="main-title">Top <span class="red-color"> Projects </span></h1>
-      <div class="container">
-        <div class="row g-4 g-md-5"></div>
-        <!-- <div class="show-more btn red-bg">Show More</div> -->
-      </div>
-    </div>
-    <!-- Start Projects -->
-    <!-- Start Contact Us -->
-    <div class="contact py-5 overflow-hidden" id="contact">
-      <h1 class="main-title"><span class="red-color">Contact</span> Us</h1>
-      <div class="container mt-5 d-flex justify-content-center gap-4">
-        <div
-          class="links d-flex flex-column gap-5 justify-content-between"
-          data-aos="zoom-in-left"
-        >
-          <a
-            class="icon"
-            href="https://www.linkedin.com/in/mohamed-gamal-omar"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
 
-          <a class="icon" href="https://wa.me/201021595806" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-
-          <a
-            class="icon"
-            href="https://github.com/mohamedgamalomar"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-
-          <a
-            class="icon"
-            href="https://www.facebook.com/profile.php?id=100013438807065"
-            target="_blank"
-          >
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-        </div>
-        <form action="" autocomplete="off" data-aos="zoom-in-right">
-          <div class="email-popup">
-            <h1 class="msg">
-              Message Sent <br />
-              Successfully
-            </h1>
-            <span>Ok</span>
-          </div>
-          <div class="input-box">
-            <input
-              type="text"
-              class="from_name"
-              placeholder="Full Name"
-              spellcheck="false"
-              required
-            />
-          </div>
-          <div class="input-box">
-            <input
-              type="email"
-              class="email"
-              placeholder="Email"
-              spellcheck="false"
-              required
-            />
-          </div>
-          <div class="input-box">
-            <textarea
-              type="text"
-              class="message"
-              placeholder="Message"
-              spellcheck="false"
-              required
-            ></textarea>
-          </div>
-          <div type="text" class="submit" disabled>Submit</div>
-          <button
-            aria-label=" Label For Button"
-            style="display: none"
-            type="reset"
-            class="reset"
-          >
-            Reset
-          </button>
-        </form>
-      </div>
-
-      <!-- <div class="map" data-aos="zoom-in-left">
+        <!-- <div class="map" data-aos="zoom-in-left">
         <iframe
           title="Map Frame"
           src=""
@@ -666,86 +686,87 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div> -->
-    </div>
-    <!-- End Contact Us -->
-    <!-- Start Footer -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="black"
-        fill-opacity="1"
-        d="M0,32L34.3,53.3C68.6,75,137,117,206,149.3C274.3,181,343,203,411,181.3C480,160,549,96,617,64C685.7,32,754,32,823,69.3C891.4,107,960,181,1029,192C1097.1,203,1166,149,1234,154.7C1302.9,160,1371,224,1406,256L1440,288L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-      ></path>
-    </svg>
+      </div>
+      <!-- End Contact Us -->
+      <!-- Start Footer -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="black"
+          fill-opacity="1"
+          d="M0,32L34.3,53.3C68.6,75,137,117,206,149.3C274.3,181,343,203,411,181.3C480,160,549,96,617,64C685.7,32,754,32,823,69.3C891.4,107,960,181,1029,192C1097.1,203,1166,149,1234,154.7C1302.9,160,1371,224,1406,256L1440,288L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
 
-    <div class="footer bg-black">
-      <div class="container d-flex justify-content-between mb-4">
-        <div class="box">
-          <h3 class="mb-4">Mohamed Gamal</h3>
-          <p class="text">
-            a passionate Frontend Developer specializing in Vue.js, React.js,
-            and Next.js
-            <br />
-            Connect with me on social media or just say hi!
-          </p>
-        </div>
-        <div class="box">
-          <div class="line">
-            <i class="fas fa-map-marker-alt fa-fw red-color"></i>
-            <div class="info">Cairo, Egypt</div>
+      <div class="footer bg-black">
+        <div class="container d-flex justify-content-between mb-4">
+          <div class="box">
+            <h3 class="mb-4">Mohamed Gamal</h3>
+            <p class="text">
+              a passionate Frontend Developer specializing in Vue.js, React.js,
+              and Next.js
+              <br />
+              Connect with me on social media or just say hi!
+            </p>
           </div>
-          <div class="line">
-            <i class="fas fa-phone-volume fa-fw red-color"></i>
-            <a href="tel:01021595806" class="info text-decoration-none">
-              <span>01021595806</span>
-            </a>
-          </div>
-          <!-- <div class="line">
+          <div class="box">
+            <div class="line">
+              <i class="fas fa-map-marker-alt fa-fw red-color"></i>
+              <div class="info">Cairo, Egypt</div>
+            </div>
+            <div class="line">
+              <i class="fas fa-phone-volume fa-fw red-color"></i>
+              <a href="tel:01021595806" class="info text-decoration-none">
+                <span>01021595806</span>
+              </a>
+            </div>
+            <!-- <div class="line">
             <i class="far fa-clock fa-fw red-color"></i>
             <div class="info">Business Hours: From 10:00 To 18:00</div>
           </div> -->
-          <div class="line">
-            <i class="fas fa-envelope fa-fw red-color"></i>
-            <a
-              href="mailto:mohammedgamal.tech@gmail.com"
-              class="info text-decoration-none"
-            >
-              <span>mohammedgamal.tech@gmail.com</span>
-            </a>
+            <div class="line">
+              <i class="fas fa-envelope fa-fw red-color"></i>
+              <a
+                href="mailto:mohammedgamal.tech@gmail.com"
+                class="info text-decoration-none"
+              >
+                <span>mohammedgamal.tech@gmail.com</span>
+              </a>
+            </div>
           </div>
         </div>
+        <p class="copyright m-0 py-4 text-center fs-5">
+          By <span class="red-color">Mohamed Gamal</span>
+          <!-- <span class="year">2023</span> -->
+        </p>
       </div>
-      <p class="copyright m-0 py-4 text-center fs-5">
-        By <span class="red-color">Mohamed Gamal</span>
-        <!-- <span class="year">2023</span> -->
-      </p>
-    </div>
-    <!-- End Footer -->
+      <!-- End Footer -->
 
-    <button
-      aria-label=" Label For Button"
-      class="scroll-btn btn p-0 rounded-circle position-fixed"
-    >
-      <i class="fa-solid fa-circle-up"></i>
-    </button>
+      <button
+        aria-label=" Label For Button"
+        class="scroll-btn btn p-0 rounded-circle position-fixed"
+      >
+        <i class="fa-solid fa-circle-up"></i>
+      </button>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+      <!-- Scripts -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <!-- <script>
+        AOS.init();
+      </script> -->
 
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
       <script type="text/javascript">
       (function(){
       emailjs.init("GJuZ94gbyIJNNDHG_");
       })();
     </script> -->
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"
       integrity="sha512-7VTiy9AhpazBeKQAlhaLRUk+kAMAb8oczljuyJHPsVPWox/QIXDFOnT9DUk1UC8EbnHKRdQowT7sOBe7LAjajQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
-    <script src="js/main.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/all.min.js"></script>
+      <script src="js/main.js"></script>
+    </main>
   </body>
 </html>

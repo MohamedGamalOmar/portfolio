@@ -1,3 +1,9 @@
+//* On Window Load
+window.onload = () => {
+  document.querySelector(".load").classList.add("d-none");
+  AOS.init();
+};
+
 //* On Window Scroll
 window.onscroll = () => {
   increaseWidth();
@@ -16,7 +22,7 @@ let charIndex = 0;
 
 let typingDuration = 200;
 let typingDelay = 200;
-let removeDuration = 200;
+let removeDuration = 100;
 let removeDelay = 2000;
 typingElement.innerText = "";
 
