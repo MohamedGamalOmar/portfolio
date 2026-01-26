@@ -20,7 +20,7 @@ let words = [
 let index = 0;
 let charIndex = 0;
 
-let typingDuration = 200;
+let typingDuration = 130;
 let typingDelay = 200;
 let removeDuration = 100;
 let removeDelay = 2000;
@@ -183,7 +183,7 @@ icon.onclick = function () {
   settingBox.classList.toggle("open");
 };
 
-document.querySelectorAll("body > div:not(.setting-box)").forEach((el) => {
+document.querySelectorAll("body main >:not(.setting-box)").forEach((el) => {
   el.onclick = function () {
     settingBox.classList.remove("open");
     document
@@ -200,7 +200,7 @@ colors.forEach((color) => {
     document.querySelector("li.active").classList.remove("active");
     e.target.classList.add("active");
     document.documentElement.style.setProperty(
-      "--red-color",
+      "--main-color",
       e.target.dataset.color,
     );
     localStorage.setItem("color", e.target.dataset.color);
@@ -209,7 +209,7 @@ colors.forEach((color) => {
 
 if (localStorage.getItem("color")) {
   document.documentElement.style.setProperty(
-    "--red-color",
+    "--main-color",
     localStorage.getItem("color"),
   );
   colors.forEach((color) => {
@@ -266,4 +266,90 @@ scrollBar();
 document.querySelector(".reset").onclick = () => {
   localStorage.clear();
   location.reload();
+};
+
+//* Contact Form Submit
+const form = document.getElementById("contact-form");
+let loading = false;
+
+form.onsubmit = function (e) {
+  e.preventDefault();
+
+  const from_name = e.target.fullname.value;
+  const email_from = e.target.email.value;
+  const message = e.target.message.value;
+
+  if (
+    loading ||
+    from_name.trim() == "" ||
+    email_from.trim() == "" ||
+    message.trim() == ""
+  )
+    return;
+
+  //* prevent sent if time passed less than 5 minutes
+
+  const lastSent = localStorage.getItem("lastSent") || "";
+
+  if (lastSent && Date.now() - lastSent < 5 * 60 * 1000) {
+    // show sweat alert
+    Swal.fire({
+      position: "center",
+      icon: "warning",
+      title: "You can send message only once every 5 minutes",
+      showConfirmButton: true,
+      theme: "dark",
+      timer: 5000,
+    });
+    return;
+  }
+
+  loading = true;
+
+  const templateParams = {
+    from_name,
+    email_from,
+    message,
+  };
+
+  document.querySelector(".contact button.submit").setAttribute("disabled", "");
+
+  emailjs.send("service_71zyhog", "template_7igv6hf", templateParams).then(
+    (response) => {
+      form.reset();
+
+      localStorage.setItem("lastSent", new Date().getTime());
+
+      // show sweat alert
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Email Sent Successfully",
+        showConfirmButton: true,
+        theme: "dark",
+        timer: 5000,
+      });
+      loading = false;
+      document
+        .querySelector(".contact button.submit")
+        .removeAttribute("disabled");
+    },
+    (error) => {
+      console.log("FAILED...", error);
+      // show sweat alert
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "Something went wrong, Email Not Sent",
+        showConfirmButton: true,
+        theme: "dark",
+        timer: 5000,
+      });
+
+      loading = false;
+      document
+        .querySelector(".contact button.submit")
+        .removeAttribute("disabled");
+    },
+  );
 };

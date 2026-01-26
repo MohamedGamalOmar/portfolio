@@ -29,9 +29,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"
-    integrity="sha512-gOQQLjHRpD3/SEOtalVq50iDn4opLVup2TF8c4QPI3/NmUPNZOk2FG0ihi8oCU/qYEsw4P6nuEZT2lAG0UNYaw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 
   <body>
@@ -52,11 +51,11 @@
             <ul
               class="colors-list d-flex justify-content-between align-items-center list-unstyled"
             >
-              <li data-color="#ff3150"></li>
-              <li data-color="#2196f3" class="active"></li>
+              <li data-color="#ff5722" class="active"></li>
+              <li data-color="#2196f3"></li>
               <li data-color="#ff9800"></li>
-              <li data-color="green"></li>
-              <li data-color="#e91e63"></li>
+              <li data-color="#019d01"></li>
+              <li data-color="#009688"></li>
             </ul>
           </div>
           <div class="option-box rounded-2">
@@ -101,6 +100,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#timeline">Journey</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills</a>
@@ -178,7 +180,7 @@
                   About <span class="red-color">Me</span>
                 </h1>
                 <!-- <h5><span class="red-color">FrontEnd</span> Developer</h5> -->
-                <p class="text-white-50 lh-lg">
+                <p class="about-text lh-lg">
                   Frontend Engineer with expertise in building responsive and
                   scalable web applications using Vue.js and React.js. Skilled
                   in turning UI designs into clean, functional, and accessible
@@ -196,7 +198,7 @@
       </div>
       <!-- End About -->
       <!-- Start Time Line -->
-      <div class="timeline py-5">
+      <div class="timeline pt-5" id="timeline">
         <h1 class="main-title text-center my-4">
           My <span class="red-color">Journey</span>
         </h1>
@@ -494,6 +496,17 @@
             >
               <img
                 loading="lazy"
+                src="imgs/pinia.svg"
+                class="img-fluid"
+                alt="icon"
+              />
+            </div>
+            <div
+              class="icon d-flex align-items-center justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                loading="lazy"
                 src="imgs/tailwind.png"
                 class="img-fluid"
                 alt="icon"
@@ -581,7 +594,7 @@
       </div>
       <!-- End Skills -->
       <!-- Start Projects -->
-      <div class="projects py-5" id="projects">
+      <div class="projects pt-5" id="projects">
         <h1 class="main-title">
           Top <span class="red-color"> Projects </span>
         </h1>
@@ -620,33 +633,29 @@
             </a>
 
             <a
-              class="icon"
-              href="https://www.facebook.com/profile.php?id=100013438807065"
+              class="icon codewars"
+              href="https://www.codewars.com/users/MohamedGamalOmar"
               target="_blank"
             >
-              <i class="fa-brands fa-facebook-f"></i>
+              <img src="./imgs/codewars.svg" alt="codewars" />
             </a>
           </div>
-          <form action="" autocomplete="off" data-aos="zoom-in-right">
-            <div class="email-popup">
-              <h1 class="msg">
-                Message Sent <br />
-                Successfully
-              </h1>
-              <span>Ok</span>
-            </div>
+          <form autocomplete="off" data-aos="zoom-in-right" id="contact-form">
             <div class="input-box">
               <input
                 type="text"
+                name="fullname"
                 class="from_name"
                 placeholder="Full Name"
                 spellcheck="false"
+                minlength="3"
                 required
               />
             </div>
             <div class="input-box">
               <input
                 type="email"
+                name="email"
                 class="email"
                 placeholder="Email"
                 spellcheck="false"
@@ -657,12 +666,14 @@
               <textarea
                 type="text"
                 class="message"
+                name="message"
                 placeholder="Message"
                 spellcheck="false"
+                minlength="10"
                 required
               ></textarea>
             </div>
-            <div type="text" class="submit" disabled>Submit</div>
+            <button type="text" class="submit">Send Email</button>
             <button
               aria-label=" Label For Button"
               style="display: none"
@@ -698,7 +709,7 @@
       </svg>
 
       <div class="footer bg-black">
-        <div class="container d-flex justify-content-between mb-4">
+        <div class="container d-flex justify-content-between gap-3 mb-4">
           <div class="box">
             <h3 class="mb-4">Mohamed Gamal</h3>
             <p class="text">
@@ -750,20 +761,35 @@
 
       <!-- Scripts -->
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <!-- <script>
-        AOS.init();
-      </script> -->
 
-      <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
       <script type="text/javascript">
-      (function(){
-      emailjs.init("GJuZ94gbyIJNNDHG_");
-      })();
-    </script> -->
+        (function () {
+          emailjs.init("z1vhY3S0AwrinX9T5");
+        })();
 
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"
-      integrity="sha512-7VTiy9AhpazBeKQAlhaLRUk+kAMAb8oczljuyJHPsVPWox/QIXDFOnT9DUk1UC8EbnHKRdQowT7sOBe7LAjajQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        // emailjs.init({
+        //   publicKey: "z1vhY3S0AwrinX9T5",
+        //   // Do not allow headless browsers
+        //   blockHeadless: true,
+        //   blockList: {
+        //     // Block the suspended emails
+        //     list: ["foo@emailjs.com"],
+        //     // The variable contains the email address
+        //     watchVariable: "userEmail",
+        //   },
+        //   limitRate: {
+        //     // Set the limit rate for the application
+        //     id: "app",
+        //     // Allow 1 request per 10s
+        //     throttle: 10000,
+        //   },
+        // });
+      </script>
+
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/all.min.js"></script>
       <script src="js/main.js"></script>
