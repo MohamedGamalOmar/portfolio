@@ -68,12 +68,12 @@ function scrollTop() {
   else document.querySelector(".scroll-btn").style.right = "-50px";
 }
 
-document.querySelector(".scroll-btn").onclick = () => {
+document.querySelector(".scroll-btn").addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
-};
+});
 
 document.addEventListener("click", function (e) {
   if (e.target.className == "close-button") {
@@ -184,12 +184,12 @@ icon.onclick = function () {
 };
 
 document.querySelectorAll("body main >:not(.setting-box)").forEach((el) => {
-  el.onclick = function () {
+  el.addEventListener("click", function () {
     settingBox.classList.remove("open");
     document
       .querySelector(".toggle-setting .fa-gear")
       .classList.remove("fa-spin");
-  };
+  });
 });
 
 //* Handle Colors option
