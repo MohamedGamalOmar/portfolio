@@ -24,6 +24,11 @@
   opacity: 0.9;
 }
 
+.highlight {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
 body {
   font-family: "Tahoma", sans-serif;
   font-family: System-ui;
@@ -192,6 +197,10 @@ body:has(.load.d-none) > main {
 /* Navbar */
 .navbar .navbar-toggler:focus {
   box-shadow: 0 0 0 2px var(--main-color);
+}
+
+.navbar-brand {
+  font-family: cursive;
 }
 
 .nav-item {
