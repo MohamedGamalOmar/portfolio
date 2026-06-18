@@ -140,18 +140,6 @@ async function addProjects() {
       e.target.parentElement.querySelector(".tooltip").style.opacity = 0;
     }
   });
-
-  // //* handle show more button
-  // const showMore = document.querySelector(".projects .show-more");
-
-  // showMore.addEventListener("click", () => {
-  //   const projects = document.querySelectorAll(".project-wrapper.d-none");
-  //   projects.forEach((project) => {
-  //     project.classList.remove("d-none");
-  //   });
-
-  //   showMore.style.display = "none";
-  // });
 }
 
 addProjects();
@@ -216,6 +204,36 @@ if (localStorage.getItem("color")) {
     color.classList.remove("active");
     if (color.dataset.color == localStorage.getItem("color")) {
       color.classList.add("active");
+    }
+  });
+}
+
+//* Handle Fonts option
+let fonts = document.querySelectorAll(".fonts-list button");
+
+fonts.forEach((font) => {
+  font.addEventListener("click", (e) => {
+    document
+      .querySelector(".fonts-list button.active")
+      .classList.remove("active");
+    e.target.classList.add("active");
+    document.documentElement.style.setProperty(
+      "--font-family",
+      e.target.dataset.font,
+    );
+    localStorage.setItem("font", e.target.dataset.font);
+  });
+});
+
+if (localStorage.getItem("font")) {
+  document.documentElement.style.setProperty(
+    "--font-family",
+    localStorage.getItem("font"),
+  );
+  fonts.forEach((font) => {
+    font.classList.remove("active");
+    if (font.dataset.font == localStorage.getItem("font")) {
+      font.classList.add("active");
     }
   });
 }

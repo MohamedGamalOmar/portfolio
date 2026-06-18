@@ -59,6 +59,32 @@
             </ul>
           </div>
           <div class="option-box rounded-2">
+            <h4 class="fs-6 mb-2">Fonts</h4>
+            <div class="fonts-list d-flex flex-column gap-2">
+              <button
+                type="button"
+                class="active btn py-1 px-2"
+                data-font="system-ui, sans-serif"
+              >
+                System
+              </button>
+              <button
+                type="button"
+                class="btn py-1 px-2"
+                data-font="'Tahoma', sans-serif"
+              >
+                Tahoma
+              </button>
+              <button
+                type="button"
+                class="btn py-1 px-2"
+                data-font="'Trebuchet MS', sans-serif"
+              >
+                Trebuchet
+              </button>
+            </div>
+          </div>
+          <div class="option-box rounded-2">
             <h4 class="fs-6">Show Scrollbar</h4>
             <div class="scroll-bar">
               <span class="yes selected btn py-1 px-2 me-1 red-bg">Yes</span>
@@ -246,13 +272,13 @@
 
                 <div class="date d-flex gap-2 align-items-center mb-3 fs-6">
                   <i class="fa-regular fa-calendar"></i>
-                  <span>Sep 2024 - Feb 2025</span>
+                  <span>Oct 2023 - Feb 2025</span>
                 </div>
                 <p>
-                  Specialized in React.js, Redux, TypeScript, and Tailwind CSS
-                  with component-based architecture, state management, and REST
-                  API integration to develop scalable and responsive user
-                  interfaces for modern web applications.
+                  Specialized in React.js, Vue.js, Redux, Pinia, TypeScript, and
+                  Tailwind CSS with component-based architecture, state
+                  management, and REST API integration to develop scalable and
+                  responsive user interfaces for modern web applications.
                 </p>
               </div>
             </div>
@@ -679,19 +705,6 @@
             <button type="text" class="submit">Send Message</button>
           </form>
         </div>
-
-        <!-- <div class="map" data-aos="zoom-in-left">
-        <iframe
-          title="Map Frame"
-          src=""
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div> -->
       </div>
       <!-- End Contact Us -->
       <!-- Start Footer -->
@@ -725,10 +738,7 @@
                 <span>01021595806</span>
               </a>
             </div>
-            <!-- <div class="line">
-            <i class="far fa-clock fa-fw red-color"></i>
-            <div class="info">Business Hours: From 10:00 To 18:00</div>
-          </div> -->
+
             <div class="line">
               <i class="fas fa-envelope fa-fw red-color"></i>
               <a
@@ -764,24 +774,6 @@
         (function () {
           emailjs.init("z1vhY3S0AwrinX9T5");
         })();
-
-        // emailjs.init({
-        //   publicKey: "z1vhY3S0AwrinX9T5",
-        //   // Do not allow headless browsers
-        //   blockHeadless: true,
-        //   blockList: {
-        //     // Block the suspended emails
-        //     list: ["foo@emailjs.com"],
-        //     // The variable contains the email address
-        //     watchVariable: "userEmail",
-        //   },
-        //   limitRate: {
-        //     // Set the limit rate for the application
-        //     id: "app",
-        //     // Allow 1 request per 10s
-        //     throttle: 10000,
-        //   },
-        // });
       </script>
 
       <script src="js/bootstrap.bundle.min.js"></script>

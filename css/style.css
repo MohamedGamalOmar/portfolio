@@ -2,6 +2,7 @@
   --main-color: #ff5722;
   --dark-color: #19283f;
   --yellow-color: #ffc400;
+  --font-family: system-ui, sans-serif;
 }
 
 * {
@@ -30,8 +31,7 @@
 }
 
 body {
-  font-family: "Tahoma", sans-serif;
-  font-family: System-ui;
+  font-family: var(--font-family);
   background-color: #191919;
   color: white;
   overflow-x: hidden;
@@ -184,6 +184,20 @@ body:has(.load.d-none) > main {
 
 .setting-box .option-box .colors-list li:last-child {
   background-color: #009688;
+}
+
+.fonts-list button {
+  background-color: #191919;
+  color: white;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.fonts-list button:hover,
+.fonts-list button.active {
+  color: white;
+  border-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 .scroll-bar span {
